@@ -1,26 +1,19 @@
-# API keys, never commit these
+# Secrets
 .env
 .env.*
+!env.example
 *.key
 
 # Python
 __pycache__/
-*.py[cod]
-.Python
+*.pyc
 venv/
-env/
 .venv/
 
-# Notebooks
+# Notebooks (repo holds .py versions)
 .ipynb_checkpoints/
 *.ipynb
 
-# Intermediate CSV exports, kept out since the same figures are in the JSON outputs
-*.csv
-
-# OS and editor noise
+# OS noise
 .DS_Store
 Thumbs.db
-.idea/
-.vscode/
-*.swp
