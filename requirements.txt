@@ -1,0 +1,10 @@
+# Versions recovered from the Colab runtime the experiments ran on (Python 3.12).
+# The anthropic client version could not be recovered and is left unpinned.
+
+anthropic
+openai==2.45.0
+google-genai==2.11.0
+scikit-learn==1.6.1
+scipy==1.16.3
+numpy==2.0.2
+python-dotenv
