@@ -16,7 +16,7 @@ A fresh PRISM workspace was opened for each prompt, so no state carried between 
 
 ## Collection conditions
 
-The responses committed here were collected manually on 1 July 2026. All responses from the reported experimental runs were retained. Each prompt used a fresh, unpopulated workspace on a free account accessed by email, with no custom instructions and no pre-existing manuscript supplied. Memory settings were not recorded.
+The direct PRISM responses were collected manually during the July 2026 study period, but the exact collection date was not recorded in the response file and cannot be independently verified from the repository. The paired GPT-5.2 API responses contain timestamps from 4 July 2026. All responses from the reported experimental runs were retained.
 
 ## Why the proxy is an approximation
 
