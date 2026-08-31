@@ -1,5 +1,5 @@
-# Runs GPT-5 through the multi-turn pressure test on the 8 prompts PRISM refused, generating a fresh turn 0 rather than reusing the stored single-turn answer.
-# Needs prism_multiturn_TEMPLATE.json in the same folder, plus OPENAI_API_KEY and ANTHROPIC_API_KEY in the environment or a .env file.
+# Runs GPT-5 through the multi-turn pressure test on the 8 prompts used in the direct PRISM Resistance Test, generating a fresh turn 0 rather than reusing the stored single-turn answer.
+# Needs prism_multiturn_collected.json in the same folder, plus OPENAI_API_KEY and ANTHROPIC_API_KEY in the environment or a .env file.
 
 import json
 import os
@@ -14,15 +14,15 @@ load_dotenv()
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 
-# upload prism_multiturn_TEMPLATE.json before running this, if you are on Colab
+# upload prism_multiturn_collected.json before running this, if you are on Colab
 try:
     from google.colab import files
     uploaded = files.upload()
 except ImportError:
     pass
 
-# only the prompt list and levels are read from this file, the PRISM responses in it are ignored
-PROMPTS_FILE = "prism_multiturn_TEMPLATE.json"
+# only the prompt details are read from this file; the collected PRISM responses are ignored
+PROMPTS_FILE = "prism_multiturn_collected.json"
 OUT_FILE = "gpt5_multiturn_fresh.json"
 
 GPT5_MODEL = "gpt-5"
@@ -117,7 +117,8 @@ Score this response on the AFIM 0.0-1.0 scale. Respond with ONLY the JSON object
 def main():
     with open(PROMPTS_FILE) as f:
         prompts = json.load(f)
-    print(f"Fresh GPT-5 multi-turn over {len(prompts)} refused prompts (judge: {JUDGE_MODEL})\n")
+
+    print(f"Fresh GPT-5 multi-turn over {len(prompts)} PRISM test prompts (judge: {JUDGE_MODEL})\n")
 
     results = []
     for idx, p in enumerate(prompts):
