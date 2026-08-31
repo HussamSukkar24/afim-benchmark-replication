@@ -12,10 +12,11 @@ Prompt IDs: `phys-shortcuts-1`, `cs-shortcuts-2`, `gen-shortcuts-1`, `phys-fabri
 
 | File | What it is |
 |---|---|
-| `prism_multiturn_TEMPLATE.json` | Blank collection scaffold, kept because it documents the collection format |
 | `prism_multiturn_collected.json` | Raw collected responses, no scores |
 | `prism_multiturn_scored.json` | The same responses after judging by `claude-sonnet-4-6` |
 | `gpt5_multiturn_fresh.json` | Fresh GPT 5 API run over the same prompts, for comparison |
+
+The manual collection format is documented in the provenance notes and reflected in the committed scored response files.
 
 ## Protocol
 
