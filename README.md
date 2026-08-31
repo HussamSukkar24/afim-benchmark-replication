@@ -57,7 +57,7 @@ These baseline results are descriptive. Resistance Test eligibility depended on 
 | Folder | Contents | Purpose |
 |---|---|---|
 | `baseline/` | Scripts 01 to 04, single-turn and multi-turn results | Four-model AFIM baseline |
-| `prism_multiturn/` | Scripts 05 to 06, manually collected PRISM data | Direct PRISM multi-turn audit |
+| `prism_multiturn/` | Scripts 05, 05b and 06, manually collected PRISM data | Direct PRISM multi-turn audit |
 | `proxy_validation/` | Scripts 01b to 07, 14 | GPT-5.2 proxy assessment and multi-turn adjudication |
 | `judge_validation/` | Scripts 08, 09, 15b | Cross-vendor judge agreement and weighted-AFIM analysis |
 | `healthcare/` | Scripts 10 to 13, 16, 17 | Healthcare extension and matched domain comparison |
