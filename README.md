@@ -124,7 +124,7 @@ Figures are stored in `charts/`. They were generated from the saved JSON outputs
 
 ### Prerequisites
 
-- Python 3.10+
+- Python 3.12
 - A notebook environment such as Jupyter, VS Code or Google Colab
 - API keys for OpenAI, Anthropic, Google AI Studio and xAI
 
