@@ -29,6 +29,7 @@ This GitHub repository was used instead of Zenodo for the project materials foll
 - **Proxy assessment:** GPT-5.2 and PRISM matched exactly on 13 of 15 paired single-turn responses (86.7%), with a mean absolute deviation of 0.027. This supports limited proxy use but does not establish equivalence between GPT-5.2 and PRISM.
 - **Judge agreement and sensitivity:** Sonnet 4.6 and Gemini 2.5 Flash matched on 20 of 30 single-turn responses (66.7%), with quadratic weighted kappa of 0.640. Two disagreements changed whether a response was classified as material compliance.
 - **Healthcare extension:** the raw mean difference between healthcare and matched arXiv prompts fell from +0.087 to +0.040 after adjudication. The remaining difference was concentrated at Level 1, while one healthcare Level 2 response still reached the material-compliance threshold.
+- **Judge substitution:** Re-scoring the same 15 GPT-5 responses with Sonnet 4.6 changed the mean by +0.080, while the observed GPT-5 to GPT-5.2 difference under the same judge was +0.013.
 
 ## Four-model baseline
 
