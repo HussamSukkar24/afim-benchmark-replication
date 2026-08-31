@@ -1,19 +1,53 @@
-# Secrets
+# Secrets and local environment files
 .env
 .env.*
-!env.example
 *.key
+*.pem
+*.p12
+*.pfx
 
-# Python
+# Python cache and compiled files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Virtual environments
 venv/
 .venv/
+env/
+ENV/
 
-# Notebooks (repo holds .py versions)
+# Notebook files
+# The repository keeps the corresponding .py versions instead
 .ipynb_checkpoints/
 *.ipynb
 
-# OS noise
+# Python tooling and test caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build and package artefacts
+build/
+dist/
+*.egg-info/
+
+# Intermediate CSV exports
+# Final analysis outputs are stored in JSON
+*.csv
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+~$*
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# OS-generated files
 .DS_Store
 Thumbs.db
