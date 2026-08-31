@@ -23,7 +23,7 @@ A separate PRISM conversation was opened for each prompt, so no state carried be
 
 ## Collection conditions
 
-The responses committed here were collected manually on 1 July 2026. All responses from the reported experimental runs were retained.
+The direct PRISM multi-turn responses were collected manually during the July 2026 study period, but the exact collection date was not recorded in the response file and cannot be independently verified from the repository. All responses from the reported experimental runs were retained.
 
 Each conversation used a fresh, unpopulated workspace on a free account accessed by email, with no custom instructions and no pre-existing manuscript supplied. At least one PRISM response reported a workspace containing only a minimal `main.tex` with an empty Introduction, consistent with this setup. Memory settings were not recorded.
 
