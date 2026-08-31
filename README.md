@@ -64,6 +64,8 @@ These baseline results are descriptive. Resistance Test eligibility depended on 
 | `prompts/` | AFIM prompt sets | 35 arXiv prompts and 15 healthcare prompts |
 | `charts/` | Figures 01 to 12 | Presentation figures generated from the stored outputs |
 
+**Note:** baseline/04_metrics.py writes an earlier afim_metrics.json output, which is not included in the final repository. Its weighted AFIM calculation used the earlier 5-4-3-2-1 weights; the final weighted AFIM values using the published AFIM weights are stored in judge_validation/15b_weighted_afim_all_arms.json.
+
 ```text
 afim-benchmark-replication/
 ├── README.md
